@@ -1,4 +1,3 @@
-
 // instigate our audio context
 // for cross browser
 const AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -44,5 +43,3 @@ pannerControl.addEventListener('input', function() {
 }, false);
 // connect our graph
 track.connect(gainNode).connect(panner).connect(audioCtx.destination);
-// Track credit: Outfoxing the Fox by Kevin MacLeod under Creative Commons
-
