@@ -1,81 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Web Audio Basics</title>
-  <meta name="description" content="IIR Filter Demo for Web Audio API">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" type="text/css" href="style.css">
-<script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-
+<h1> Examples of web audio API </h1>
 	
 </head>
 <body>
-
-<div id="boombox">
-	<div class="boombox-handle"></div>
-
-	<div class="boombox-body">
-
-		<section class="master-controls">
-			<input type="range" id="volume" class="control-volume" min="0" max="2" value="1" list="gain-vals" step="0.01" data-action="volume" />
-			<datalist id="gain-vals">
-				<option value="0" label="min">
-				<option value="2" label="max">
-			</datalist>
-			<label for="volume">VOL</label>
-
-			<input type="range" id="panner" class="control-panner" list="pan-vals" min="-1" max="1" value="0" step="0.01" data-action="panner" />
-			<datalist id="pan-vals">
-				<option value="-1" label="left">
-				<option value="1" label="right">
-			</datalist>
-			<label for="panner">PAN</label>
-
-			<button class="control-power" role="switch" aria-checked="false" data-power="on">
-				<span>On/Off</span>
-			</button>
-		</section>
-
-		<section class="tape">
-
-			<audio src="Gymnopedie.wav" crossorigin="anonymous" ></audio>
-
-<!-- 			type="audio/mpeg" -->
-
-			<button data-playing="false" class="tape-controls-play" role="switch" aria-checked="false">
-				<span>Play/Pause</span>
-			</button>
-		</section>
-
-	</div><!-- boombox-body -->
-	
-</div>
-<h1>Compressor example</h1>
-    <audio controls>  
-      <source src="Gymnopedie.wav" type="audio/wav"> 
-      <p>Browser too old to support HTML5 audio? How depressing!</p>
-    </audio>
-    <button data-active="false">Add compression</button>
-    <pre></pre> 
-	
-<h2>Set playback rate</h2>
-    <input class="playback-rate-control" type="range" min="0.25" max="3" step="0.05" value="1">
-    <span class="playback-rate-value">1.0</span>
-	
- <canvas id="canvas" width="512" height="256" ></canvas>
-
-        <p id="controls">
-          <input type="button" id="start_button" value="Start">
-          &nbsp; &nbsp;
-          <input type="button" id="stop_button" value="Stop">
-        </p>
-	
+<table>
+ <tr>
+  <td><li><a href="#home">Home</a></li></td>
+  <td><li><a href="https://langyixie.github.io/afw/volume.html">Volume Control and Panner</a></li></td>
+  <td><li><a href="https://langyixie.github.io/afw/playback.html">Playback Speed</a></li></td>
+  <td><li><a href="https://langyixie.github.io/afw/compressor.html">Compressor</a></li></td>
+  <td><li><a href="https://langyixie.github.io/afw/analyser.html">Audio Analyser</a></li></td>
+ </tr>
+</table>
        <style>
             #canvas {
                 margin-left: auto;
@@ -91,9 +29,7 @@
             }
         </style>
 	
-<script src="volume.js" > </script>
-<script src="analyser.js" > </script>
-<script src="compressor.js" > </script>
+
 
 </body>
 </html>
