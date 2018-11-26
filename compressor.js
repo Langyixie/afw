@@ -1,8 +1,7 @@
-
-const AudioContext = window.AudioContext || window.webkitAudioContext;
+var AudioContext = window.AudioContext || window.webkitAudioContext;
 var audioCtx = new AudioContext();
 var myAudio = document.querySelector('audio');
-var pre = document.querySelector('pre');v
+var pre = document.querySelector('pre');
 var myScript = document.querySelector('script');
 var button = document.querySelector('button');
 pre.innerHTML = myScript.innerHTML;
