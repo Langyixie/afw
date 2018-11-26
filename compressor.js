@@ -1,4 +1,5 @@
 
+const AudioContext = window.AudioContext || window.webkitAudioContext;
 var audioCtx = new AudioContext();
 var myAudio = document.querySelector('audio');
 var pre = document.querySelector('pre');v
