@@ -1,4 +1,4 @@
-            // Hacks to deal with different function names in different browsers
+           
             window.requestAnimFrame = (function(){
               return  window.requestAnimationFrame       ||
                       window.webkitRequestAnimationFrame ||
