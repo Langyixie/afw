@@ -20,7 +20,7 @@ loopendControl.setAttribute('disabled', 'disabled');
 function getData() {
   source = audioCtx.createBufferSource();
   request = new XMLHttpRequest();
-  request.open('GET', 'viper.ogg', true);
+  request.open('GET', 'Gymnopedie.wav', true);
   request.responseType = 'arraybuffer';
   request.onload = function() {
     var audioData = request.response;
