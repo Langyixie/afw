@@ -14,9 +14,6 @@ loopstartControl.setAttribute('disabled', 'disabled');
 var loopendControl = document.querySelector('.loopend-control');
 var loopendValue = document.querySelector('.loopend-value');
 loopendControl.setAttribute('disabled', 'disabled');
-// use XHR to load an audio track, and
-// decodeAudioData to decode it and stick it in a buffer.
-// Then we put the buffer into the source
 function getData() {
   source = audioCtx.createBufferSource();
   request = new XMLHttpRequest();
@@ -38,7 +35,6 @@ function getData() {
   }
   request.send();
 }
-// wire up buttons to stop and play audio, and range slider control
 play.onclick = function() {
   getData();
   source.start(0);
@@ -66,5 +62,4 @@ loopendControl.oninput = function() {
   source.loopEnd = loopendControl.value;
   loopendValue.innerHTML = loopendControl.value;
 }
-// dump script to pre element
 pre.innerHTML = myScript.innerHTML;
