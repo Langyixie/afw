@@ -1,5 +1,4 @@
 
-	console.clear();
 // instigate our audio context
 // for cross browser
 const AudioContext = window.AudioContext || window.webkitAudioContext;
